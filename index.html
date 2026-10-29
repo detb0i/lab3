@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лабораторна робота №3 — Функції в JavaScript</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Лабораторна робота №3. Функції в JavaScript</h1>
+  <p class="sub">Натискайте кнопки, щоб запустити завдання. Результати — в alert та в журналі внизу сторінки (також у консолі: F12).</p>
+
+  <h2>Рівень 4–6 балів</h2>
+  <div class="task"><h3>Завдання 1. Привітання</h3><p>getFullName() + showGreeting()</p><button data-task="t4_1">Запустити</button></div>
+  <div class="task"><h3>Завдання 2. Оцінка студента</h3><p>getStudentInfo(), checkGrade(), showResult()</p><button data-task="t4_2">Запустити</button></div>
+  <div class="task"><h3>Завдання 3. Чайові</h3><p>calculateTip(amount, percent = 10) + showResult()</p><button data-task="t4_3">Запустити</button></div>
+
+  <h2>Рівень 7–9 балів</h2>
+  <div class="task"><h3>Завдання 1. Таймер із колбеком</h3><p>startGreetingTimer(message, seconds, callback) — колбек є стрілковою функцією.</p><button data-task="t7_1">Запустити (3 с)</button></div>
+  <div class="task"><h3>Завдання 2. Калькулятор</h3><p>calculate(a, b, operation) + showResult()</p><button data-task="t7_2">Запустити</button></div>
+  <div class="task"><h3>Завдання 3. Лічильник кліків (замикання)</h3><p>createClickCounter() — значення count запам’ятовується між викликами.</p><button id="counterBtn">Клік +1</button></div>
+
+  <h2>Рівень 10–12 балів</h2>
+  <div class="task"><h3>Завдання 1. Генератор випадкових чисел</h3><p>function* randomGenerator(min, max) з нескінченним циклом.</p>
+    <button id="setupRandom" class="alt">Задати межі</button><button id="next">Next number</button><div id="out">—</div></div>
+  <div class="task"><h3>Завдання 2. Генератор паролів</h3><p>passwordGenerator() отримує символи через next(value); «done» завершує роботу.</p><button data-task="t10_2">Запустити</button></div>
+  <div class="task"><h3>Завдання 3. Генератор діалогів</h3><p>chatBot() — yield повертає запит, відповідь передається через next(answer).</p><button data-task="t10_3">Запустити</button></div>
+  <div class="task"><h3>Завдання 4. Втрата контексту</h3>
+    <p>Спочатку введіть ім’я. Кнопка «Say» використовує bind() і працює правильно, друга кнопка — присвоєння без bind() (this втрачається).</p>
+    <button id="setupHello" class="alt">Ввести ім’я</button>
+    <button id="hello" disabled>Say</button>
+    <button id="helloBad" class="alt" disabled>Say (без bind)</button></div>
+
+  <div class="logbar"><h2 style="border:0;margin:0;padding:0">Журнал</h2><button class="alt" id="clearLog">Очистити</button></div>
+  <pre id="log"></pre>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
